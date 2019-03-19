@@ -1,29 +1,20 @@
 pragma solidity ^0.4.24;
 
+import "../abstract/AMetaIdentityProxy.sol";
+import "./Slice.sol";
 import "./Destructible.sol";
-import "./ERC735.sol";
-import "./KeyGetters.sol";
 import "./KeyManager.sol";
+import "./KeyGetters.sol";
 import "./MultiSig.sol";
 import "./ClaimManager.sol";
-import "./Slice.sol";
+
 
 /// @title MetaIdentity
 /// @author Metadium, genie
 /// @notice Identity contract implementing ERC 725, ERC 735 and Metadium features.
-
-contract MetaIdentityLib is KeyManager, MultiSig, ClaimManager, Destructible, KeyGetters {
+contract MetaIdentityLib is AMetaIdentityProxy, MultiSig, ClaimManager, Destructible, KeyManager, KeyGetters {
     using Slice for bytes;
     using Slice for string;
-
-    constructor() public { 
-        init(msg.sender);
-    }
-    // Fallback function accepts Ether transactions
-    // solhint-disable-next-line no-empty-blocks
-    function () external payable {
-    
-    }
 
     function init(address _managementKey) public {
         bytes32 senderKey = addrToKey(_managementKey);
@@ -41,5 +32,4 @@ contract MetaIdentityLib is KeyManager, MultiSig, ClaimManager, Destructible, Ke
         // Supports both ERC 725 & 735
         supportedInterfaces[ERC725ID() ^ ERC735ID()] = true;
     }
-
 }

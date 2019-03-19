@@ -31,14 +31,14 @@
     "absolutePath": "/Users/hexoul/Documents/Metadium/metabolics/contracts/interface/IIdentityManager.sol",
     "exportedSymbols": {
       "IIdentityManager": [
-        4879
+        4498
       ]
     },
-    "id": 4880,
+    "id": 4499,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4871,
+        "id": 4490,
         "literals": [
           "solidity",
           "^",
@@ -46,7 +46,7 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:27"
+        "src": "0:24:28"
       },
       {
         "baseContracts": [],
@@ -54,9 +54,9 @@
         "contractKind": "contract",
         "documentation": "@title IIdentityManager\n@dev Interface for IdentityManager",
         "fullyImplemented": false,
-        "id": 4879,
+        "id": 4498,
         "linearizedBaseContracts": [
-          4879
+          4498
         ],
         "name": "IIdentityManager",
         "nodeType": "ContractDefinition",
@@ -64,7 +64,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4878,
+            "id": 4497,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -72,16 +72,16 @@
             "name": "isMetaId",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4874,
+              "id": 4493,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4873,
+                  "id": 4492,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4878,
-                  "src": "149:13:27",
+                  "scope": 4497,
+                  "src": "149:13:28",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -89,10 +89,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4872,
+                    "id": 4491,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "149:7:27",
+                    "src": "149:7:28",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -102,20 +102,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "148:15:27"
+              "src": "148:15:28"
             },
             "payable": false,
             "returnParameters": {
-              "id": 4877,
+              "id": 4496,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4876,
+                  "id": 4495,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4878,
-                  "src": "184:4:27",
+                  "scope": 4497,
+                  "src": "184:4:28",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -123,10 +123,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4875,
+                    "id": 4494,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "184:4:27",
+                    "src": "184:4:28",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -136,33 +136,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "183:6:27"
+              "src": "183:6:28"
             },
-            "scope": 4879,
-            "src": "131:59:27",
+            "scope": 4498,
+            "src": "131:59:28",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4880,
-        "src": "99:93:27"
+        "scope": 4499,
+        "src": "99:93:28"
       }
     ],
-    "src": "0:192:27"
+    "src": "0:192:28"
   },
   "legacyAST": {
     "absolutePath": "/Users/hexoul/Documents/Metadium/metabolics/contracts/interface/IIdentityManager.sol",
     "exportedSymbols": {
       "IIdentityManager": [
-        4879
+        4498
       ]
     },
-    "id": 4880,
+    "id": 4499,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4871,
+        "id": 4490,
         "literals": [
           "solidity",
           "^",
@@ -170,7 +170,7 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:27"
+        "src": "0:24:28"
       },
       {
         "baseContracts": [],
@@ -178,9 +178,9 @@
         "contractKind": "contract",
         "documentation": "@title IIdentityManager\n@dev Interface for IdentityManager",
         "fullyImplemented": false,
-        "id": 4879,
+        "id": 4498,
         "linearizedBaseContracts": [
-          4879
+          4498
         ],
         "name": "IIdentityManager",
         "nodeType": "ContractDefinition",
@@ -188,7 +188,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4878,
+            "id": 4497,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -196,16 +196,16 @@
             "name": "isMetaId",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4874,
+              "id": 4493,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4873,
+                  "id": 4492,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4878,
-                  "src": "149:13:27",
+                  "scope": 4497,
+                  "src": "149:13:28",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -213,10 +213,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4872,
+                    "id": 4491,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "149:7:27",
+                    "src": "149:7:28",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -226,20 +226,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "148:15:27"
+              "src": "148:15:28"
             },
             "payable": false,
             "returnParameters": {
-              "id": 4877,
+              "id": 4496,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4876,
+                  "id": 4495,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4878,
-                  "src": "184:4:27",
+                  "scope": 4497,
+                  "src": "184:4:28",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -247,10 +247,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4875,
+                    "id": 4494,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "184:4:27",
+                    "src": "184:4:28",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -260,20 +260,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "183:6:27"
+              "src": "183:6:28"
             },
-            "scope": 4879,
-            "src": "131:59:27",
+            "scope": 4498,
+            "src": "131:59:28",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4880,
-        "src": "99:93:27"
+        "scope": 4499,
+        "src": "99:93:28"
       }
     ],
-    "src": "0:192:27"
+    "src": "0:192:28"
   },
   "compiler": {
     "name": "solc",
@@ -281,5 +281,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2019-03-18T07:46:38.390Z"
+  "updatedAt": "2019-03-19T07:21:36.528Z"
 }

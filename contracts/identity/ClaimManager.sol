@@ -30,11 +30,11 @@ contract ClaimManager is Pausable, ERC725, ERC735 {
     mapping(uint256 => bytes32[]) internal claimsByTopic;
     uint256 public numClaims;
 
-    function getNumClaims() public view returns(uint256 num) {
+    function getNumClaims() public view returns (uint256 num) {
         return numClaims;
     }
     
-  /// @dev Requests the ADDITION or the CHANGE of a claim from an issuer.
+    /// @dev Requests the ADDITION or the CHANGE of a claim from an issuer.
     ///  Claims can requested to be added by anybody, including the claim holder itself (self issued).
     /// @param _topic Type of claim
     /// @param _scheme Scheme used for the signatures
@@ -93,9 +93,9 @@ contract ClaimManager is Pausable, ERC725, ERC735 {
         string _uri,
         bytes _idSignature
     )
-    public
-    whenNotPaused
-    returns (bool success)
+        public
+        whenNotPaused
+        returns (bool success)
     {
         // Check signature
         require(_validSignature(_topic, _scheme, issuer, _signature, _data));
@@ -358,7 +358,7 @@ contract ClaimManager is Pausable, ERC725, ERC735 {
         address issuer,
         string _uri
     )
-    internal
+        internal
     {
         claims[getClaimId(issuer, _topic)].uri = _uri;
     }

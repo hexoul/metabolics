@@ -1,7 +1,7 @@
 pragma solidity ^0.4.24;
 
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
-import "./identity/MetaIdentityUsingLib.sol";
+import "./identity/MetaIdentityProxy.sol";
 import "./RegistryUser.sol";
 
 
@@ -23,7 +23,6 @@ contract ProxyIdentityManager is RegistryUser {
         THIS_NAME = "IdentityManager";
     }
 
-
     /**
      * @dev Create Metadium Identity which is based upon erc725-735 
      * @param _managementKey basic managementKey to use
@@ -32,7 +31,7 @@ contract ProxyIdentityManager is RegistryUser {
     function createMetaId(address _managementKey) public permissioned returns (bool success) {
         require(_managementKey != address(0), "address is 0x0");
 
-        address newMetaId = new MetaIdentityUsingLib(REG, _managementKey);
+        address newMetaId = new MetaIdentityProxy(REG, _managementKey);
         metaIds.push(newMetaId);
         metaIdExistence[newMetaId] = true;
 
@@ -42,16 +41,15 @@ contract ProxyIdentityManager is RegistryUser {
 
     }
 
-    function getDeployedMetaIds() public view returns(address[] addrs) {
+    function getDeployedMetaIds() public view returns (address[] addrs) {
         return metaIds;
     }
 
-    function isMetaId(address _addr) public view returns(bool found) {
+    function isMetaId(address _addr) public view returns (bool found) {
         return metaIdExistence[_addr];
     }
 
-    function getLengthOfMetaIds() public view returns(uint256 length) {
+    function getLengthOfMetaIds() public view returns (uint256 length) {
         return metaIds.length;
     }
-
 }

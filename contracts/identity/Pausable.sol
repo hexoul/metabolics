@@ -2,11 +2,11 @@ pragma solidity ^0.4.24;
 
 import "./KeyBase.sol";
 
+
 /// @title Pausable
 /// @author genie
 /// @notice Base contract which allows children to implement an emergency stop mechanism
 /// @dev Inspired by https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/lifecycle/Pausable.sol
-
 contract Pausable is KeyBase {
     event LogPause();
     event LogUnpause();

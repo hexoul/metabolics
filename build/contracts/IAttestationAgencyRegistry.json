@@ -31,14 +31,14 @@
     "absolutePath": "/Users/hexoul/Documents/Metadium/metabolics/contracts/interface/IAttestationAgencyRegistry.sol",
     "exportedSymbols": {
       "IAttestationAgencyRegistry": [
-        4869
+        4488
       ]
     },
-    "id": 4870,
+    "id": 4489,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4861,
+        "id": 4480,
         "literals": [
           "solidity",
           "^",
@@ -46,7 +46,7 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:26"
+        "src": "0:24:27"
       },
       {
         "baseContracts": [],
@@ -54,9 +54,9 @@
         "contractKind": "contract",
         "documentation": "@title IAttestationAgencyRegistry\n@dev Interface for AttestationAgencyRegistry",
         "fullyImplemented": false,
-        "id": 4869,
+        "id": 4488,
         "linearizedBaseContracts": [
-          4869
+          4488
         ],
         "name": "IAttestationAgencyRegistry",
         "nodeType": "ContractDefinition",
@@ -64,7 +64,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4868,
+            "id": 4487,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -72,16 +72,16 @@
             "name": "isRegistered",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4864,
+              "id": 4483,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4863,
+                  "id": 4482,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4868,
-                  "src": "183:13:26",
+                  "scope": 4487,
+                  "src": "183:13:27",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -89,10 +89,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4862,
+                    "id": 4481,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "183:7:26",
+                    "src": "183:7:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -102,20 +102,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "182:15:26"
+              "src": "182:15:27"
             },
             "payable": false,
             "returnParameters": {
-              "id": 4867,
+              "id": 4486,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4866,
+                  "id": 4485,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4868,
-                  "src": "218:7:26",
+                  "scope": 4487,
+                  "src": "218:7:27",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -123,10 +123,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4865,
+                    "id": 4484,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "218:7:26",
+                    "src": "218:7:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -136,33 +136,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "217:9:26"
+              "src": "217:9:27"
             },
-            "scope": 4869,
-            "src": "161:66:26",
+            "scope": 4488,
+            "src": "161:66:27",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4870,
-        "src": "119:111:26"
+        "scope": 4489,
+        "src": "119:111:27"
       }
     ],
-    "src": "0:230:26"
+    "src": "0:230:27"
   },
   "legacyAST": {
     "absolutePath": "/Users/hexoul/Documents/Metadium/metabolics/contracts/interface/IAttestationAgencyRegistry.sol",
     "exportedSymbols": {
       "IAttestationAgencyRegistry": [
-        4869
+        4488
       ]
     },
-    "id": 4870,
+    "id": 4489,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4861,
+        "id": 4480,
         "literals": [
           "solidity",
           "^",
@@ -170,7 +170,7 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:26"
+        "src": "0:24:27"
       },
       {
         "baseContracts": [],
@@ -178,9 +178,9 @@
         "contractKind": "contract",
         "documentation": "@title IAttestationAgencyRegistry\n@dev Interface for AttestationAgencyRegistry",
         "fullyImplemented": false,
-        "id": 4869,
+        "id": 4488,
         "linearizedBaseContracts": [
-          4869
+          4488
         ],
         "name": "IAttestationAgencyRegistry",
         "nodeType": "ContractDefinition",
@@ -188,7 +188,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4868,
+            "id": 4487,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -196,16 +196,16 @@
             "name": "isRegistered",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4864,
+              "id": 4483,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4863,
+                  "id": 4482,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4868,
-                  "src": "183:13:26",
+                  "scope": 4487,
+                  "src": "183:13:27",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -213,10 +213,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4862,
+                    "id": 4481,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "183:7:26",
+                    "src": "183:7:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -226,20 +226,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "182:15:26"
+              "src": "182:15:27"
             },
             "payable": false,
             "returnParameters": {
-              "id": 4867,
+              "id": 4486,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4866,
+                  "id": 4485,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4868,
-                  "src": "218:7:26",
+                  "scope": 4487,
+                  "src": "218:7:27",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -247,10 +247,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4865,
+                    "id": 4484,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "218:7:26",
+                    "src": "218:7:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -260,20 +260,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "217:9:26"
+              "src": "217:9:27"
             },
-            "scope": 4869,
-            "src": "161:66:26",
+            "scope": 4488,
+            "src": "161:66:27",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4870,
-        "src": "119:111:26"
+        "scope": 4489,
+        "src": "119:111:27"
       }
     ],
-    "src": "0:230:26"
+    "src": "0:230:27"
   },
   "compiler": {
     "name": "solc",
@@ -281,5 +281,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2019-03-18T07:46:38.390Z"
+  "updatedAt": "2019-03-19T07:21:36.528Z"
 }

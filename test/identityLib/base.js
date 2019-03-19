@@ -2,7 +2,7 @@ import { getAndClearGas, assertBlockGasLimit } from '../util';
 
 const Identity = artifacts.require('Identity');
 const MetaIdentityLib = artifacts.require('MetaIdentityLib.sol');
-const MetaIdentityUsingLib = artifacts.require('MetaIdentityUsingLib.sol');
+const MetaIdentityProxy = artifacts.require('MetaIdentityProxy.sol');
 const Registry = artifacts.require('Registry.sol');
 
 // Constants
@@ -106,7 +106,7 @@ export const setupTest = async (accounts, init, total, claims = [], managementTh
   for (const [i, k] of initKeys.entries()) {
     if (initPurposes[i] == 1) {
       firstMgmt = i;
-      metaId = await MetaIdentityUsingLib.new(registry.address, initKeys[i]);
+      metaId = await MetaIdentityProxy.new(registry.address, initKeys[i]);
       metaIdUsingLib = await MetaIdentityLib.at(metaId.address);
       willDeployAt = metaId.address;
       // metaId basically register first key as management, action and claim key

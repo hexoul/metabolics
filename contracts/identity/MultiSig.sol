@@ -244,64 +244,6 @@ contract MultiSig is Pausable, ERC725, SignatureVerifier {
         
     }
 
-    
-
-    /// @dev Approves an execution. If the execution is being approved multiple times,
-    ///  it will throw an error. Disapproving multiple times will work i.e. not do anything.
-    ///  The approval could potentially trigger an execution (if the threshold is met).
-    /// @param _id Execution ID
-    /// @param _approve `true` if it's an approval, `false` if it's a disapproval
-    /// @return `false` if it's a disapproval and there's no previous approval from the sender OR
-    ///  if it's an approval that triggered a failed execution. `true` if it's a disapproval that
-    ///  undos a previous approval from the sender OR if it's an approval that succeded OR
-    ///  if it's an approval that triggered a succesful execution
-    // function approve(uint256 _id, bool _approve)
-    //     public
-    //     whenNotPaused
-    //     returns (bool success)
-    // {
-    //     require(_id != 0);
-    //     Execution storage e = execution[_id];
-    //     // Must exist
-    //     require(e.to != 0);
-
-    //     // Must be approved with the right key
-    //     hasPermission(msg.sender, e.to, e.data);
-
-    //     emit Approved(_id, _approve);
-
-    //     address[] storage approvals = approved[_id];
-    //     if (!_approve) {
-    //         // Find in approvals
-    //         for (uint i = 0; i < approvals.length; i++) {
-    //             if (approvals[i] == msg.sender) {
-    //                 // Undo approval
-    //                 approvals[i] = approvals[approvals.length - 1];
-    //                 delete approvals[approvals.length - 1];
-    //                 approvals.length--;
-    //                 e.needsApprove += 1;
-    //                 return true;
-    //             }
-    //         }
-    //         return false;
-    //     } else {
-    //         // Only approve once
-    //         for (i = 0; i < approvals.length; i++) {
-    //             require(approvals[i] != msg.sender);
-    //         }
-
-    //         // Approve
-    //         approvals.push(msg.sender);
-    //         e.needsApprove -= 1;
-
-    //         // Do we need more approvals?
-    //         if (e.needsApprove == 0) {
-    //             return _execute(_id, e, true);
-    //         }
-    //         return true;
-    //     }
-    // }
-
     /// @dev Executes an action on other contracts, or itself, or a transfer of ether
     /// @param _id Execution ID
     /// @param e Execution data

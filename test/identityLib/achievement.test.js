@@ -12,7 +12,7 @@ const Achievement = artifacts.require('Achievement.sol');
 const MetaIdentityLib = artifacts.require('MetaIdentityLib.sol');
 const ProxyIdentityManager = artifacts.require('ProxyIdentityManager.sol');
 
-contract('Achievement Manager(MetaIdUsingLib)', function ([deployer, identity1, aa1, user1, identity2, issuer1, issuer2, issuer3, proxy1]) {
+contract('Achievement Manager(MetaIdProxy)', function ([deployer, identity1, aa1, user1, identity2, issuer1, issuer2, issuer3, proxy1]) {
   let registry, topicRegistry, aaRegistry, identityManager, achievementManager, metaIdentity, achievement, metaIdentityLib;
   let metaIdentity2;
   const ether1 = 1000000000000000000;
